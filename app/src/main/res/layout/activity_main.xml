@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/fundo_caixa_texto">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="22dp"
+            android:text=" 1 BTC ="
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/fundo_caixa_texto"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/textoValorReais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor do Bitcoin R$"
+            android:gravity="center"
+            android:background="@android:color/holo_green_light"
+            android:drawableLeft="@drawable/br"
+            android:padding="1dp"
+            android:textSize="22dp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/textoValorDolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor do Bitcoin $"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:drawableLeft="@drawable/usa"
+            android:padding="1dp"
+            android:textSize="22dp"
+            android:textColor="@android:color/white"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veja quanto o Real vale em Bitcoin"
+        android:background="@drawable/fundo_caixa_texto_cinza"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+
+        />
+
+
+    <EditText
+        android:id="@+id/editTextInserir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_caixa_texto"
+        android:ems="10"
+        android:hint="Insira o valor aqui "
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/botaoBitcoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular bitcoin"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:id="@+id/textResultadoBtc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique no botão para calcular  quanto Bitcoin é possível comprar"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/fundo_caixa_texto"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/holo_green_dark">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quanto custa o Bitcoin em R$"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edtQtdBtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Insira qtd BTC"
+                android:background="@drawable/fundo_caixa_texto"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custa = "
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/textResultadoBtcEmBrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fundo_caixa_texto"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCalcularBtcEmBrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="calcule"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
